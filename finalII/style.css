@@ -1,0 +1,290 @@
+
+/*Layout*/
+html {
+	background-color: #000;
+}
+
+.index {
+	text-align: center;
+}
+
+.index h1 img, .textpng img {
+  max-width: 700px;
+}
+
+.home {
+	font-size: 2.6rem;
+	line-height: 1rem;
+	text-align: center;
+	padding-top: 2.3em;
+}
+
+nav ul{
+	list-style-type: none;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+.home a {
+	text-decoration: none;
+	color: #fff;
+}
+
+ a:hover {
+  color: #00cccc;
+}
+
+.banner video {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	z-index: -1;
+	opacity: 18%;
+	overflow: hidden;
+}
+
+.body_index footer {
+	font-size: 1.7rem;
+	color: #f2d963;
+	text-align: center;
+	margin-top: -30px;
+}
+/*Layout*/
+
+
+
+/*ABOUT*/
+.about {
+	text-align: center;
+}
+
+.about h1 img, .about .textpng img {
+  max-width: 350px;
+}
+
+.about .textpng img {
+	margin-top: -10px;
+}
+
+.aboutli li{
+	display: inline;
+	float: left;
+}
+
+.nav1 {
+	padding-right: 30px;
+}
+
+.about_header {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.box2 {
+	grid-row: 1;
+	justify-self: start;
+}
+
+.about_nav {
+	font-size: 1.6rem;
+	line-height: 1rem;
+	padding-top: 1.5em;
+	padding-left: 1.5em;
+}
+
+ a {
+	color: #f2d963;
+	 text-decoration: none;
+}
+
+.aboutnested {
+	color: #fff;
+	margin: 0 2em;
+	text-align: left;
+}
+
+.about footer {
+	font-size: 1.7rem;
+	color: #f2d963;
+	text-align: center;
+	margin-top: 114px;
+}
+/*ABOUT*/
+
+/*SHOP*/
+.shopmain {
+	margin-right: 9rem;
+	margin-left: 9rem;
+}
+
+.shopnested {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	grid-column-gap: 0.24em;
+}
+
+.shopnested div img {
+	max-width: 90%;
+	padding: 0px 20px;
+}
+
+.belowshirts {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin: auto;
+	justify-items: center;
+	grid-column-gap: 0.24em;
+	width: 50%;
+}
+
+.belowshirts div img {
+	max-width: 100%;
+}
+
+p {
+	color: #fff;
+	font-size: 2rem;
+}
+
+.onetext {
+	margin: 60px 0px 10px 0px;
+	font-style: italic;
+}
+
+.shopmain h2 {
+	background: #f2d963;
+	display: inline-block;
+	padding: 7px;
+	border-radius: 10px;
+	margin: 40px 0 0 0;
+	font-size: 2rem;
+}
+
+.shopmain h2 a {
+	color: #000;
+}
+
+.shopmain h2 a:hover {
+	color: #f2d963;
+}
+
+.shopmain h2:hover {
+	background: #000;
+}
+/*SHOP*/
+
+@media only screen and (max-width: 1024px) {
+	.about_nav {
+	font-size: 1.2rem;
+}
+	
+.belowshirts {
+	margin: auto;
+	width: 90%;
+}
+	
+	.home {
+	font-size: 1.6rem;
+	line-height: 1rem;
+	text-align: center;
+	padding-top: 3.3em;
+}
+	
+	.shopnested div img {
+	padding: 0px 20px;
+	margin-top: 55px;
+}
+}
+
+@media only screen and (max-width: 846px) {
+	.about_nav {
+	padding-top: 1.5em;
+	padding-left: 1em;
+}
+}
+
+@media only screen and (max-width:769px) {
+	.about_nav {
+		line-height: 0;
+		padding-top: 1em;
+	}
+	
+	.shopnested {
+		width: 100%;
+	}
+	
+	.shopmain {
+	    margin: auto;
+	}
+	
+	.aboutnested {
+	    max-width: 100%;
+}
+	
+	p, .onetext {
+		margin-right: 10px;
+		margin-left: 10px;;
+	}
+	
+	.index h1 img, .textpng img {
+        max-width: 90%;
+}
+}
+
+@media only screen and (max-width:425px) {
+	.about_nav {
+		font-size: 1.2em;
+		padding-left: 0em;
+		padding-top: 10px;
+	}
+	
+	.about h1 img, .about .textpng img {
+        max-width: 70%;
+}
+
+.nav1 {
+	padding-right: 100px;
+}
+
+.about_header {
+	display: block;
+}
+	
+	.aboutnested {
+	    text-align:center; 
+		font-size: 10px;
+}
+	
+	.shopnested div img {
+		padding: 0px;
+	}
+	
+	.shopnested {
+	display: block;
+	justify-items: center;
+	grid-column-gap: 0.24em;
+}
+	
+	.index h1 img {
+		margin-top: 150px;
+}
+	.about video {
+		display: none;
+	}
+}
+
+@media only screen and (max-width:400px) {
+	.home {
+		padding-top: 10px;
+	}
+}
